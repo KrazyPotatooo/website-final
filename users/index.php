@@ -1,7 +1,4 @@
-<?php
-    //include auth_session.php file on all user panel pages
-    include("auth_session.php");
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>KapeTann Brewed Coffee Shop</title>
+        <title>Brews</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -29,32 +26,26 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <a href="#" class="logo">
-                <img src="../assets/images/logo.png" class="img-logo" alt="KapeTann Logo">
+                <img src="../assets/images/Logo2.png" class="img-logo" alt="KapeTann Logo">
             </a>
 
             <!-- MAIN MENU FOR SMALLER DEVICES -->
             <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="#home" class="text-decoration-none">Home</a>
+                            <a href="home.php" class="text-decoration-none">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="text-decoration-none">About</a>
+                            <a href="about.php" class="text-decoration-none">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#menu" class="text-decoration-none">Menu</a>
+                            <a href="menu.php" class="text-decoration-none">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#gallery"class="text-decoration-none">Gallery</a>
+                            <a href="contact.php" class="text-decoration-none">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#blogs" class="text-decoration-none">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="text-decoration-none">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="logout.php" class="text-decoration-none">Logout</a>
+                            <a href="login.php" class="text-decoration-none">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +80,7 @@
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
-                <h3>Welcome to KapeTann Coffee Shop, <?php echo $_SESSION['username']; ?>!</h3>
+                <h3>Welcome to KapeTann Coffee Shop</h3>
                 <p>
                     <strong>We are open 4:00 PM to 9:00 PM.</strong>
                 </p>
@@ -105,21 +96,12 @@
                     <img src="../assets/images/about-img.png" alt="" class="img-fluid">
                 </div>
                 <div class="content">
-                    <h3>Welcome to KapeTann!</h3>
+                    <h3>Welcome to Brews!</h3>
                     <p>
-                        At KapeTann Coffee Shop, we are passionate about coffee and believe
-                        that every cup tells a story. We are a cozy coffee shop located
-                        in the heart of the city, dedicated to providing an exceptional
-                        coffee experience to our customers. Our love for coffee has led
-                        us on a voyage of exploration and discovery, as we travel the
-                        world in search of the finest coffee beans, carefully roasted
-                        and brewed to perfection.
+                    At Brews CoffeeShop, we are passionate about coffee and believe that every cup tells a story. Nestled in the heart of the city, we are a cozy coffee shop dedicated to providing an exceptional coffee experience for our customers. Our love for coffee has taken us on a journey of exploration and discovery, traveling the world to find the finest coffee beans, which we carefully roast and Brews to perfection.
                     </p>
                     <p>
-                        But coffee is not just a drink, it's an experience. Our warm and
-                        inviting atmosphere at KapeTann is designed to be a haven
-                        for coffee lovers, where they can relax, connect, and embark
-                        on their own coffee voyages.
+                    But coffee is not just a drink—it's an experience. The warm and inviting atmosphere at Brews CoffeeShop is designed to be a haven for coffee lovers, where they can relax, connect, and embark on their own coffee journeys.
                     </p>
                     <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
                 </div>
@@ -151,7 +133,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <img src="../assets/images/cart-item-3.png" alt="" class="product-img">
-                                <h3 class="product-title">Nitro Cold Brew w/ Straw (12 OZ)</h3>
+                                <h3 class="product-title">Nitro Cold Brews w/ Straw (12 OZ)</h3>
                                 <div class="price">₱50.00</div>
                                 <a class="btn add-cart">Add to Cart</a>
                             </div>
@@ -221,7 +203,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <img src="../assets/images/cart-item-11.png" alt="" class="product-img">
-                                <h3 class="product-title">Cold Brew Tonic In a Cup (12 OZ)</h3>
+                                <h3 class="product-title">Cold Brews Tonic In a Cup (12 OZ)</h3>
                                 <div class="price">₱35.00</div>
                                 <a class="btn add-cart">Add to Cart</a>
                             </div>
@@ -229,7 +211,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <img src="../assets/images/cart-item-12.png" alt="" class="product-img">
-                                <h3 class="product-title">Caramel Cold Foam Cold Brew (12 OZ)</h3>
+                                <h3 class="product-title">Caramel Cold Foam Cold Brews (12 OZ)</h3>
                                 <div class="price">₱55.00</div>
                                 <a class="btn add-cart">Add to Cart</a>
                             </div>
@@ -239,245 +221,6 @@
                         <button id="showHideBtn" class="btn btn-dark">SHOW MORE</button>
                     </center> 
                 </div>
-            </div>
-        </section>
-
-        <!-- GALLERY SECTION -->
-        <section class="gallery" id="gallery">
-            <h1 class="heading">The <span>Gallery</span></h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery1.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 1</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery2.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 2</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery3.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 3</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br />
-                    <div class="row pic-to-hide">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery4.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 4</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery4.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 4</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/gallery5.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 5</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br />
-                    <center>
-                        <button id="showBtn" class="btn btn-dark">SHOW MORE</button>
-                    </center> 
-                </div> 
-            </div>
-        </section>
-
-        <!-- BLOGS SECTION -->
-        <section class="blogs" id="blogs">
-            <h1 class="heading">Our <span>Blogs</span></h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/pour.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="title text-decoration-none">Batch Brew vs. Pour Over | The Pros and Cons Experienced by Coffee Professionals</a>
-                                    <span>by The Way to Coffee</span>
-                                    <p>Thinking back 15-20 years, I remember my parents going about their morning ritual of brewing coffee on weekends before burying...</p>
-                                    <center>
-                                        <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="btn">Read More</a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/carbon.webp" alt="">
-                                </div>
-                                <div class="content">
-                                    <a href="https://www.taylorsofharrogate.co.uk/news/carbon-neutral-tea-and-coffee" target="_blank" class="title text-decoration-none">Carbon Neutral Tea and Coffee</a>
-                                    <span>by Taylors editorial team</span>
-                                    <p>All our tea and coffee is carbon neutral – but what does that actually mean? Here’s an explanation of how we’ve lowered our carbon footprint, and the three projects in Kenya, Malawi and Uganda which have reduced the emissions of our products to...</p>
-                                    <center>
-                                        <a href="https://www.taylorsofharrogate.co.uk/news/carbon-neutral-tea-and-coffee" target="_blank" class="btn">Read More</a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="../assets/images/coffeemaker.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <a href="https://coffeestylish.com/best-drip-coffee-makers/" target="_blank" class="title text-decoration-none">BEST DRIP COFFEE MAKERS 2020</a>
-                                    <span>by CoffeeStylish.com</span>
-                                    <p>What is a good coffee maker? A good home coffee maker should have removable parts so it can be cleaned completely because you don’t want mold or buildups in your machine. It should be fast. It...</p>
-                                    <center>
-                                        <a href="https://coffeestylish.com/best-drip-coffee-makers/" target="_blank" class="btn">Read More</a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS SECTION -->
-        <section class="review" id="review">
-            <h1 class="heading"><span>Testimo</span>nials</h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="../assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="../assets/images/pic-1.png" alt="" class="user">
-                                <h3>Jane Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="../assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="../assets/images/pic-2.png" alt="" class="user">
-                                <h3>John Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="../assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="../assets/images/pic-3.png" alt="" class="user">
-                                <h3>Jane Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
             </div>
         </section>
 
@@ -504,7 +247,7 @@
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <img src="../assets/images/logo.png" class="img"><br />
+                    <img src="../assets/images/Logo2.png" class="img"><br />
                     <i class="fas fa-envelope"></i>
                     <p>abfiguerrez18@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
